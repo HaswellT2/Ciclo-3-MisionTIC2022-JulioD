@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 import { MainvComponent } from './views/mainv/mainv.component';
+import {ReactiveFormsModule,FormsModule} from "@angular/forms"
+import {HttpClientModule} from "@angular/common/http"
 
 @NgModule({
   declarations: [
@@ -14,7 +16,10 @@ import { MainvComponent } from './views/mainv/mainv.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
